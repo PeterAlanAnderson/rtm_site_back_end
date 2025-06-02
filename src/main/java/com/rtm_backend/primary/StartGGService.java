@@ -31,10 +31,14 @@ public class StartGGService {
                        "      id\n" +
                        "      name\n" +
                        "      slug\n" +
+                       "      startAt\n" +
+                       "      venueAddress\n" +
+                       "      venueName\n" +
+                       "      images { url} \n " +
                        "    }\n" +
                        "  }\n}";
         String requestBody = String.format(
-                "{\"query\": \"%s\", \"variables\": {\"perPage\": 5, \"ownerId\": \"830225\"}}",
+                "{\"query\": \"%s\", \"variables\": {\"perPage\": 10, \"ownerId\": \"830225\"}}",
                 escapeJson(query)
         );
         System.out.println("REQUEST BODY: " + requestBody);
