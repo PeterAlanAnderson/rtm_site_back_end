@@ -34,7 +34,7 @@ public class StartGGService {
                        "      startAt\n" +
                        "      venueAddress\n" +
                        "      venueName\n" +
-                       "      images { url} \n " +
+                       "      images { url, type } \n " +
                        "    }\n" +
                        "  }\n}";
         String requestBody = String.format(
